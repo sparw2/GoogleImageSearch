@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sandeep.gridimagesearch.ImageDisplayActivity" >
+
+   <item
+        android:id="@+id/menu_item_share"
+        android:icon="@drawable/ic_action_share"
+        android:showAsAction="ifRoom"
+        android:title="@string/share_image"
+        android:onClick="onShareItem"
+        android:actionProviderClass="android.widget.ShareActionProvider" />
+
+</menu>

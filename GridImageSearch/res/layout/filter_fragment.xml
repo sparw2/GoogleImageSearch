@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/filter"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center" 
+	>
+	<TextView
+		android:id="@+id/lbImageSize"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_alignParentLeft="true"
+		android:text="@string/image_size_caption"
+		android:textAppearance="?android:attr/textAppearanceSmall" />
+	<Spinner
+		android:id="@+id/spImageSize"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/lbImageSize"
+		android:layout_alignParentRight="true"
+		android:layout_toRightOf="@+id/lbImageSize"
+		android:layout_marginLeft="20dp"
+		android:gravity="right"
+		android:paddingRight="10dp"
+		/>
+
+	<Spinner
+		android:id="@+id/spImageColor"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/lbImageColor"
+		android:layout_alignLeft="@+id/spImageSize"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/spImageSize"
+		android:layout_toRightOf="@+id/lbImageColor"
+		android:paddingRight="10dp" />
+	<TextView
+		android:id="@+id/lbImageColor"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/lbImageSize"
+		android:layout_below="@+id/lbImageSize"
+		android:layout_alignParentLeft="true"
+		android:layout_marginTop="20dp"
+		android:text="@string/color_filter_label" />
+	<TextView
+		android:id="@+id/lbImageType"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/lbImageColor"
+		android:layout_below="@+id/spImageColor"
+		android:layout_marginTop="20dp"
+		android:text="@string/image_type_caption" />
+	<Spinner
+		android:id="@+id/spImageType"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/lbImageType"
+		android:layout_alignLeft="@+id/spImageColor"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/spImageColor"
+		android:layout_toRightOf="@+id/lbImageType"
+		android:paddingRight="10dp" />
+	<TextView
+		android:id="@+id/lbSiteFilter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/lbImageType"
+		android:layout_below="@+id/spImageType"
+		android:layout_marginTop="20dp"
+		android:text="@string/site_filter_caption" />
+	<EditText
+		android:id="@+id/etSiteFIlter"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/lbSiteFilter"
+		android:layout_alignLeft="@+id/spImageType"
+		android:layout_alignParentRight="true"
+		android:layout_below="@id/spImageType"
+		android:layout_toRightOf="@+id/lbSiteFilter"
+		android:ems="10"
+		android:paddingRight="10dp" >
+	</EditText>
+	<Button android:id="@+id/btFilterSave" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_below="@+id/lbSiteFilter" 
+		android:layout_alignLeft="@+id/spImageType"
+		android:layout_marginTop="20dp" 
+		android:layout_toRightOf="@+id/lbSiteFilter"
+		android:layout_marginBottom="20dp" 
+		android:text="@string/filter_save_label"
+		android:background="@drawable/custom_button"
+		/>
+	
+	<Button android:id="@+id/btFilterCancel" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:layout_alignBottom="@+id/btFilterSave"
+		android:layout_toRightOf="@+id/btFilterSave"
+		android:layout_marginLeft="15dp"
+		android:text="@string/filter_cancel_label"
+		android:background="@drawable/custom_button"
+		/>
+	
+</RelativeLayout>
+
